@@ -1,0 +1,17 @@
+﻿using System;
+using System.Threading.Tasks;
+using System.Collections.Generic;
+using System.Numerics;
+using Nethereum.Hex.HexTypes;
+using Nethereum.Contracts.CQS;
+using Nethereum.ABI.FunctionEncoding.Attributes;
+using FunctionOutput;
+namespace DefaultNamespace
+{
+    [Function("BaseStats", "uint256")]
+    public class BaseStatsFunction:ContractMessage
+    {
+        [Parameter("uint256", "_number", 1)]
+        public BigInteger Number {get; set;}
+    }
+}

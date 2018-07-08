@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+  <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />
+  <PropertyGroup>
+    <Description>Encoding and decoding of ABI Types, functions, events of Ethereum contracts</Description>
+    <Copyright>Juan Blanco</Copyright>
+    <AssemblyTitle>Nethereum.ABI</AssemblyTitle>
+    <Version>$(NethereumVersion)</Version>
+    <Authors>Juan Blanco</Authors>
+    <TargetFrameworks>$(DefaultFrameworksUnitySupport)</TargetFrameworks>
+    <AssemblyName>Nethereum.ABI</AssemblyName>
+    <PackageId>Nethereum.ABI</PackageId>
+    <FileUpgradeFlags>40</FileUpgradeFlags>
+    <UpgradeBackupLocation>C:\Users\gleb\Desktop\Nethereum-2.5.1\Backup\src\Nethereum.ABI\</UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nethereum.Hex\Nethereum.Hex.csproj" />
+    <ProjectReference Include="..\Nethereum.Util\Nethereum.Util.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <FileUpgradeFlags>40</FileUpgradeFlags>
+    <UpgradeBackupLocation>C:\Users\gleb\Desktop\Nethereum-2.5.1\Backup\src\Nethereum.XUnitEthereumClients\</UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nethereum.JsonRpc.WebSocketClient\Nethereum.JsonRpc.WebSocketClient.csproj" />
+    <ProjectReference Include="..\Nethereum.Web3\Nethereum.Web3.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="xunit" Version="2.3.1" />
+  </ItemGroup>
+</Project>

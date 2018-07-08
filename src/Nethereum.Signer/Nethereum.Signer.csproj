@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+  <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />
+  <PropertyGroup>
+    <Description>Nethereum signer library to sign and verify messages, RLP and transactions using an Ethereum account</Description>
+    <Copyright>Juan Blanco</Copyright>
+    <AssemblyTitle>Nethereum.Signer</AssemblyTitle>
+    <VersionPrefix>$(NethereumVersion)</VersionPrefix>
+    <Authors>Juan Blanco</Authors>
+    <TargetFrameworks>$(DefaultFrameworksUnitySupport)</TargetFrameworks>
+    <AssemblyName>Nethereum.Signer</AssemblyName>
+    <PackageId>Nethereum.Signer</PackageId>
+    <PackageTags>Netherum;Ethereum;Blockchain;Transactions;Signer</PackageTags>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/Nethereum/Nethereum/master/LICENSE.md</PackageLicenseUrl>
+    <FileUpgradeFlags>40</FileUpgradeFlags>
+    <UpgradeBackupLocation>C:\Users\gleb\Desktop\Nethereum-2.5.1\Backup\src\Nethereum.Signer\</UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nethereum.Hex\Nethereum.Hex.csproj" />
+    <ProjectReference Include="..\Nethereum.Util\Nethereum.Util.csproj" />
+    <ProjectReference Include="..\Nethereum.RLP\Nethereum.RLP.csproj" />
+  </ItemGroup>
+</Project>

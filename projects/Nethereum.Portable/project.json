@@ -1,0 +1,36 @@
+﻿{
+  "version": "2.5.1",
+  "description": "Nethereum.Portable includes all the Nethereum libraries in a single package Web3, Geth, ABI, Contracts, Signing, RPC, Hex, KeyStore, Util, ENS, Quorum and StardardToken",
+  "authors": [
+    "Juan Blanco"
+  ],
+  "copyright": "Juan Blanco",
+  "title": "Nethereum.Portable",
+  "packOptions": {
+    "tags": [
+      "Netherum",
+      "Ethereum",
+      "Blockchain",
+      "Crypto 2.0"
+    ],
+    "summary": "Nethereum.Portable includes all the Nethereum libraries in a single package Web3, Geth, ABI, Contracts, Signing, RPC, Hex, KeyStore, Util, ENS, Quorum and StardardToken",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/Nethereum/Nethereum"
+    },
+    "projectUrl": "http://www.nethereum.com",
+    "licenseUrl": "https://raw.githubusercontent.com/Nethereum/Nethereum/master/LICENSE.md",
+    "iconUrl": "https://raw.githubusercontent.com/Nethereum/Nethereum/master/logos/logo64x64.png"
+  },
+  "supports": {},
+  "dependencies": {
+    "Portable.BouncyCastle": "1.8.2",
+    "Common.Logging.Core": "3.4.1"
+  },
+  "frameworks": {
+    ".NETFramework,Version=v4.6.1": {}
+  },
+  "runtimes": {
+  	  "win": {}
+  }
+}
