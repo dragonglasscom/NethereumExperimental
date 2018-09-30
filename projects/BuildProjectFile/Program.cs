@@ -24,6 +24,7 @@ namespace BuildProjectFile
             stringBuilder.Append(CreateOutputFolder("..\\src\\Nethereum.Contracts", "Contracts"));
             stringBuilder.Append(CreateOutputFolder("..\\src\\Nethereum.Util", "Util"));
             stringBuilder.Append(CreateOutputFolder("..\\src\\Nethereum.Signer", "Signer"));
+			stringBuilder.Append(CreateOutputFolder("..\\src\\Nethereum.HDWallet", "HDWallet"));
             stringBuilder.Append(CreateOutputFolder("..\\src\\Nethereum.RLP", "RLP"));
             stringBuilder.Append(CreateOutputFolder("..\\src\\Nethereum.Uport", "Uport"));
 		    stringBuilder.Append(CreateOutputFolder("..\\src\\Nethereum.Parity", "Parity"));
