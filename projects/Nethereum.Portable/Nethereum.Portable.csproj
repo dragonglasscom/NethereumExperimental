@@ -1212,6 +1212,12 @@
     <Compile Include="..\..\src\Nethereum.Accounts\Managed\ManagedAccountTransactionManager.cs">
       <Link>Accounts\Managed\ManagedAccountTransactionManager.cs</Link>
     </Compile>
+	<Compile Include="..\..\src\Nethereum.HDWallet\Wallet.cs">
+      <Link>HDWallet\Wallet.cs</Link>
+    </Compile>
+	<Compile Include="..\..\src\Nethereum.HDWallet\SecureRandom.cs">
+      <Link>HDWallet\SecureRandom.cs</Link>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">

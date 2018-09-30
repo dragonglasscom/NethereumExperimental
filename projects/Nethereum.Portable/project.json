@@ -24,13 +24,14 @@
   },
   "supports": {},
   "dependencies": {
-    "Portable.BouncyCastle": "1.8.2",
-    "Common.Logging.Core": "3.4.1"
+    "Common.Logging.Core": "3.4.1",
+    "NBitcoin": "4.1.1.48",
+    "Portable.BouncyCastle": "1.8.3"
   },
   "frameworks": {
     ".NETFramework,Version=v4.6.1": {}
   },
   "runtimes": {
-  	  "win": {}
+    "win": {}
   }
 }
