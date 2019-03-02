@@ -7,6 +7,7 @@
     <NuspecFile>nuget\Nethereum.ABI.Autogen.nuspec</NuspecFile>
     <StartupObject></StartupObject>
     <ApplicationIcon />
+    <Configurations>Debug;Release;Portable-Release;Portable-Debug</Configurations>
   </PropertyGroup>
 
   <ItemGroup>

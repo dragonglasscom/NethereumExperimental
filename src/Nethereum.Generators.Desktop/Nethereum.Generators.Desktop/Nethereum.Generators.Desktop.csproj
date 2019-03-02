@@ -7,6 +7,7 @@
     <Title>Nethereum.Generators.Desktop</Title>
     <Copyright>Copyright © 2018</Copyright>
     <Description>Description of Nethereum.Generators.Desktop</Description>
+    <Configurations>Debug;Release;Portable-Release;Portable-Debug</Configurations>
   </PropertyGroup>
   
   <ItemGroup>

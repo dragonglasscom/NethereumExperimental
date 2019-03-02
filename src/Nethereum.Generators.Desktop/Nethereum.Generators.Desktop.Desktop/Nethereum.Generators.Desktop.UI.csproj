@@ -3,6 +3,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net461</TargetFramework>
+    <Configurations>Debug;Release;Portable-Release;Portable-Debug</Configurations>
   </PropertyGroup>
 	
   <ItemGroup>

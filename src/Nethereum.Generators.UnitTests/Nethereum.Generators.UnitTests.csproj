@@ -4,6 +4,7 @@
     <Description>Nethereum.Generator.Tests Class Library</Description>
     <Authors>Juan Blanco</Authors>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <Configurations>Debug;Release;Portable-Release;Portable-Debug</Configurations>
   </PropertyGroup>
 
   <ItemGroup>

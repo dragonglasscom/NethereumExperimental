@@ -2,13 +2,29 @@
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\buildConf\Generic-CodeGen.props" />
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Configurations>Debug;Release;Portable-Release;Portable-Debug</Configurations>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Nethereum.ABI" Version="2.5.1" />
-    <PackageReference Include="Newtonsoft.Json" Version="11.0.1" />
+    <PackageReference Include="Nethereum.ABI" Version="2.5.1" Condition="'$(Configuration)'=='Release'Or'$(Configuration)'=='Debug'"/>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\projects\Nethereum.Portable\Nethereum.Portable.csproj" Condition="'$(Configuration)'=='Portable-Release'Or'$(Configuration)'=='Portable-Debug'"/>
+  </ItemGroup>
+	
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" Condition="'$(Configuration)'=='Release'Or'$(Configuration)'=='Debug'">
+    </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json" Condition="'$(Configuration)'=='Portable-Release'Or'$(Configuration)'=='Portable-Debug'">
+      <HintPath>..\lib\AOT-friendly\Newtonsoft.Json.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+  </ItemGroup>
+	
   <ItemGroup>
     <ProjectReference Include="..\Nethereum.Generators\Nethereum.Generators.csproj" />
   </ItemGroup>

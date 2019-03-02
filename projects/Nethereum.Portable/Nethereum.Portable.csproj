@@ -33,6 +33,24 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Portable-Release|AnyCPU'">
+    <OutputPath>bin\Portable-Release\</OutputPath>
+    <DefineConstants>TRACE;PCL</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Portable-Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Portable-Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;PCL</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
     <None Include="project.json" />
@@ -147,7 +165,7 @@
     <Compile Include="..\..\src\Nethereum.ABI\Decoders\ITypeDecoder.cs">
       <Link>ABI\Decoders\ITypeDecoder.cs</Link>
     </Compile>
-	<Compile Include="..\..\src\Nethereum.ABI\Decoders\IRawDecoder.cs">
+    <Compile Include="..\..\src\Nethereum.ABI\Decoders\IRawDecoder.cs">
       <Link>ABI\Decoders\IRawDecoder.cs</Link>
     </Compile>
     <Compile Include="..\..\src\Nethereum.ABI\Decoders\StringTypeDecoder.cs">
@@ -1212,18 +1230,14 @@
     <Compile Include="..\..\src\Nethereum.Accounts\Managed\ManagedAccountTransactionManager.cs">
       <Link>Accounts\Managed\ManagedAccountTransactionManager.cs</Link>
     </Compile>
-	<Compile Include="..\..\src\Nethereum.HDWallet\Wallet.cs">
+    <Compile Include="..\..\src\Nethereum.HDWallet\Wallet.cs">
       <Link>HDWallet\Wallet.cs</Link>
     </Compile>
-	<Compile Include="..\..\src\Nethereum.HDWallet\SecureRandom.cs">
+    <Compile Include="..\..\src\Nethereum.HDWallet\SecureRandom.cs">
       <Link>HDWallet\SecureRandom.cs</Link>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\lib\Experimental\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Net" />
     <Reference Include="System.Net.Http" />
